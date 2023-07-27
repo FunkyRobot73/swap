@@ -1,7 +1,36 @@
+<!-- <div class="card" style="width: 18rem;" *ngFor="let item of comicbook">
+    <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{item.title}}</h5>
+      <p class="card-text">{{item.description}}</p>
+      <a href="#" class="btn btn-primary">Purchase</a>
+    </div>
+  </div> -->
 
-
-<ul>
-    <li *ngFor="let item of comicbook">
-       Thanks for looking {{item.title}}
-    </li>
-</ul>
+  <div class="container mt-2 bt-2 mb-2">
+    <div class="row">
+        <div *ngFor="let item of comicbook" class="column">
+    
+            <div class="container course-card">
+                
+                <div class="course-title">
+                    
+                    <h3 class="form-background mt-2"> {{item.title}} ({{item.issue | uppercase}})</h3>
+                   <h3> {{item.publisher}} ({{item.year}})</h3>
+                </div>
+            
+                <img width="300" alt="Funky Robot Logo" [src]="'http://back.swap2go.ca/public/' + item.image" class="mt-2">
+            
+                <div class="course-description">
+            
+                    {{item.short}}
+            
+                </div>
+            
+                <button  class="mt-2 mb-2">Add 2 Cart!</button>
+            </div>
+            
+    
+        </div>
+      </div>
+  </div>

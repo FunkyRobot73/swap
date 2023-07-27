@@ -13,7 +13,8 @@ export interface Idata {
     image: string,
     value: number,
     slabbed: string,  
-    createdAt: string
+    createdAt: string,
+    short: string
 
     
 }
