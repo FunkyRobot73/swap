@@ -11,15 +11,15 @@
     <div class="row">
         <div *ngFor="let item of comicbook" class="column">
     
-            <div class="container course-card">
+            <div class="container course-card rounder">
                 
-                <div class="course-title">
+                <div class="course-title rounder">
                     
-                    <h3 class="form-background mt-2"> {{item.title}} ({{item.issue | uppercase}})</h3>
+                    <h3 class="form-background mt-2 pt-2 pb-2 rounder"> {{item.title}} ({{item.issue | uppercase}})</h3>
                    <h3> {{item.publisher}} ({{item.year}})</h3>
                 </div>
             
-                <img width="300" alt="Funky Robot Logo" [src]="'http://back.swap2go.ca/public/' + item.image" class="mt-2">
+                <img width="200" alt="Funky Robot Logo" [src]="'http://back.swap2go.ca/public/' + item.image" class="mt-2">
             
                 <div class="course-description">
             
