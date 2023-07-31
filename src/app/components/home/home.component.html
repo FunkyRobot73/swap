@@ -7,6 +7,8 @@
     </div>
   </div> -->
 
+  <app-main></app-main>
+
   <div class="container mt-2 bt-2 mb-2">
     <div class="row">
         <div *ngFor="let item of comicbook" class="column">
@@ -19,7 +21,7 @@
                    <h3> {{item.publisher}} ({{item.year}})</h3>
                 </div>
             
-                <img width="200" alt="Funky Robot Logo" [src]="'http://back.swap2go.ca/public/' + item.image" class="mt-2">
+                <img width="200" alt="Comic Book for sale" [src]="'http://back.swap2go.ca/public/' + item.image" class="mt-2">
             
                 <div class="course-description">
             
@@ -27,10 +29,12 @@
             
                 </div>
             
-                <button  class="mt-2 mb-2">Add 2 Cart!</button>
+                <button  class="mt-2 mb-2">Add 2 Cart!</button> 
             </div>
             
     
         </div>
       </div>
   </div>
+
+  
