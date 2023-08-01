@@ -1,0 +1,21 @@
+form{
+    font-weight:800;
+}
+p{
+    font-size: 4rem;
+}
+.one{
+    color:#34ABE0;
+}
+.two{
+    color:#FF6347;
+}
+button{
+    margin-left: 50%;
+    background-color:#6C63FF;
+    color: white;
+    font-weight: bold;
+}
+img{
+    height: 15rem;
+}

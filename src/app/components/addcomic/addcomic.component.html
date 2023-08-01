@@ -1,0 +1,60 @@
+<div class="text-center mb-3">
+    <p class="h1 text-center mb-3"><span class="one">SnowAngels</span> <span class="two">Blog!</span></p>
+    <img src="../../../assets/images/add-item.jpg">
+</div>
+  
+  
+  <form [formGroup]="registerForm" (ngSubmit)="register()" class="container">
+    <div class="row">
+      <div class="mb-3 col-lg-6">
+        <label class="form-label">First Name:</label>
+        <input type="text" class="form-control" formControlName="name" />
+      </div>
+  
+      <div class="mb-3 col-lg-6">
+        <label class="form-label">Email:</label>
+        <input type="text" class="form-control" formControlName="email" />
+      </div>
+    </div>
+    
+    
+    
+    <div class="mb-3 text-center">
+      <label class="form-label">Title (75 Characters Max):</label>
+      <textarea
+        rows="2"
+        cols="50"
+        type="text"
+        class="form-control"
+        formControlName="title"
+      >
+      </textarea>
+    </div>
+    <div class="mb-3 text-center">
+      <label class="form-label">Post (200 - 5000 Characters):</label>
+      <textarea
+        rows="20"
+        cols="50"
+        type="text"
+        class="form-control"
+        formControlName="post"
+      >
+      </textarea>
+    </div>
+    <!-- <div class="mb-3 col">
+      <label class="form-label">Image:</label> <br /> -->
+      <!-- <input type="text" class="form-control" formControlName="image"> -->
+      <!-- <input
+        type="file"
+        (change)="selectFile($event)"
+        accept="image/x-png,image/gif,image/jpeg, image/jpg"
+      />
+    </div> -->
+  
+  
+    <button type="submit" class="btn mb-5">Blog It!</button>
+    <!-- [disabled]="registerForm.invalid" -->
+  </form>
+
+  <!-- I'm hoping this works -->
+  
