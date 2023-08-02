@@ -4,40 +4,40 @@
 </div>
   
   
-  <form [formGroup]="registerForm" (ngSubmit)="register()" class="container">
+  <form [formGroup]="addComicForm" (ngSubmit)="register()" class="container">
     <div class="row">
       <div class="mb-3 col-lg-6">
-        <label class="form-label">First Name:</label>
-        <input type="text" class="form-control" formControlName="name" />
+        <label class="form-label">Title:</label>
+        <input type="text" class="form-control" formControlName="title" />
       </div>
   
       <div class="mb-3 col-lg-6">
-        <label class="form-label">Email:</label>
-        <input type="text" class="form-control" formControlName="email" />
+        <label class="form-label">Issue:</label>
+        <input type="text" class="form-control" formControlName="issue" />
       </div>
     </div>
     
     
     
     <div class="mb-3 text-center">
-      <label class="form-label">Title (75 Characters Max):</label>
+      <label class="form-label">Year:</label>
       <textarea
         rows="2"
         cols="50"
         type="text"
         class="form-control"
-        formControlName="title"
+        formControlName="year"
       >
       </textarea>
     </div>
     <div class="mb-3 text-center">
-      <label class="form-label">Post (200 - 5000 Characters):</label>
+      <label class="form-label">Publisher:</label>
       <textarea
         rows="20"
         cols="50"
         type="text"
         class="form-control"
-        formControlName="post"
+        formControlName="publisher"
       >
       </textarea>
     </div>

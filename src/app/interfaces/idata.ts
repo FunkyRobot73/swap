@@ -14,7 +14,9 @@ export interface Idata {
     value: number,
     slabbed: string,  
     createdAt: string,
-    short: string
+    short: string,
+    ISBN: string,
+    QTY: number
 
     
 }

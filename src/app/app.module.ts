@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './components/main/main.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddcomicComponent } from './components/addcomic/addcomic.component';
 
 @NgModule({
@@ -24,6 +25,8 @@ import { AddcomicComponent } from './components/addcomic/addcomic.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],
