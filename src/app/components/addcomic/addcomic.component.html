@@ -1,5 +1,5 @@
 <div class="text-center mb-3">
-    <p class="h1 text-center mb-3"><span class="one">SnowAngels</span> <span class="two">Blog!</span></p>
+    <p class="h1 text-center mb-3 mt-5"><span class="one">Swap2GO!</span> <span class="two">COMICS</span></p>
     <img src="../../../assets/images/add-item.jpg">
 </div>
   
@@ -11,48 +11,110 @@
         <input type="text" class="form-control" formControlName="title" />
       </div>
   
-      <div class="mb-3 col-lg-6">
-        <label class="form-label">Issue:</label>
+      <div class="mb-3 col-lg-2">
+        <label class="form-label">Issue #:</label>
         <input type="text" class="form-control" formControlName="issue" />
       </div>
+
+      <div class="mb-3 col-lg-2">
+        <label class="form-label">Type:</label>
+        <input type="text" class="form-control" formControlName="type" placeholder="comic, trade, hard"/>
+      </div>
+      <div class="mb-3 col-lg-2">
+        <label class="form-label">Year:</label>
+        <input type="text" class="form-control" formControlName="year" />
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="mb-3 col-lg-4">
+          <label class="form-label">Publisher:</label>
+          <input type="text" class="form-control" formControlName="publisher" />
+        </div>
+    
+        <div class="mb-3 col-lg-4">
+          <label class="form-label">Condition:</label>
+          <input type="text" class="form-control" formControlName="condition" />
+        </div>
+  
+        <div class="mb-3 col-lg-4">
+          <label class="form-label">Key:</label>
+          <input type="text" class="form-control" formControlName="key" />
+        </div>
+        
     </div>
     
+    <div class="row">
+        <div class="mb-3 col-lg-4">
+          <label class="form-label">Characters:</label>
+          <input type="text" class="form-control" formControlName="characters" />
+        </div>
     
+        <div class="mb-3 col-lg-4">
+          <label class="form-label">Writer:</label>
+          <input type="text" class="form-control" formControlName="writer" />
+        </div>
+  
+        <div class="mb-3 col-lg-4">
+          <label class="form-label">Artist:</label>
+          <input type="text" class="form-control" formControlName="artist" />
+        </div>
+        
+    </div>
+    
+    <div class="row">
+        <div class="mb-3 col-lg-4">
+          <label class="form-label">Value:</label>
+          <input type="number" class="form-control" formControlName="value" />
+        </div>
+    
+        <div class="mb-3 col-lg-4">
+          <label class="form-label">ISBN:</label>
+          <input type="text" class="form-control" formControlName="isbn" />
+        </div>
+  
+        <div class="mb-3 col-lg-4">
+          <label class="form-label">QTY:</label>
+          <input type="number" class="form-control" formControlName="qty" />
+        </div>
+        
+    </div>
     
     <div class="mb-3 text-center">
-      <label class="form-label">Year:</label>
+      <label class="form-label">Short Description:</label>
       <textarea
         rows="2"
         cols="50"
         type="text"
         class="form-control"
-        formControlName="year"
+        formControlName="short"
       >
       </textarea>
     </div>
     <div class="mb-3 text-center">
-      <label class="form-label">Publisher:</label>
+      <label class="form-label">Long Description:</label>
       <textarea
-        rows="20"
+        rows="8"
         cols="50"
         type="text"
         class="form-control"
-        formControlName="publisher"
-      >
+        formControlName="description">
       </textarea>
     </div>
-    <!-- <div class="mb-3 col">
-      <label class="form-label">Image:</label> <br /> -->
-      <!-- <input type="text" class="form-control" formControlName="image"> -->
-      <!-- <input
+
+
+    <div class="mb-3 col">
+      <label class="form-label">Image:</label> <br />
+      <input type="text" class="form-control" formControlName="image">
+      <input class="mt-2"
         type="file"
         (change)="selectFile($event)"
         accept="image/x-png,image/gif,image/jpeg, image/jpg"
       />
-    </div> -->
+    </div>
   
   
-    <button type="submit" class="btn mb-5">Blog It!</button>
+    <button type="submit" class="btn mb-5">Post It!</button>
     <!-- [disabled]="registerForm.invalid" -->
   </form>
 

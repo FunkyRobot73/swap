@@ -40,7 +40,7 @@ export class AddcomicComponent {
     this.addComicService.registerComic(formData).subscribe({
       next: (result) => {
         console.log(result);
-        alert('Blog has been successfully created!');
+        alert('Comic has been successfully created!');
       },
       error: (err) => {
         console.log(err.message);
