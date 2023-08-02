@@ -6,15 +6,15 @@ import { Idata } from '../interfaces/idata';
   providedIn: 'root'
 })
 export class AddcomicService {
-  url = "https://back.swap2go.ca/addcomic"
+  url = "https://back.swap2go.ca/addcomics"
 
   constructor(private httpClient: HttpClient) { }
 
   registerComic(formData: any){
-    return this.httpClient.post<Idata>('https://back.swap2go.ca/addcomic', formData)
+    return this.httpClient.post<Idata>('https://back.swap2go.ca/addcomics', formData)
   }
 
-  createBlog(data:any) {
+  createComic(data:any) {
     return this.httpClient.post<Idata>(this.url, data);
   }
 }
