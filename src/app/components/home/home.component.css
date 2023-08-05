@@ -81,3 +81,12 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
+.short {
+  font-weight: bolder;
+  color: #6C63FF;
+}
+
+.money {
+  font-weight: bolder;
+  font-size:xx-large;
+}

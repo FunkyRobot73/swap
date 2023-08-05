@@ -1,4 +1,5 @@
-export interface Idata {
+export interface Icomic {
+    id:number,
     title: string,
     issue: string,
     type: string,
@@ -13,10 +14,10 @@ export interface Idata {
     image: string,
     value: number,
     slabbed: string,  
-    createdAt: string,
+    // createdAt: string,
     short: string,
-    ISBN: string,
-    QTY: number
+    isbn: string,
+    qty: number
 
     
 }

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Idata } from '../interfaces/idata';
+import { Icomic } from '../interfaces/idata';
 
 @Injectable({
   providedIn: 'root'
@@ -10,11 +10,11 @@ export class AddcomicService {
 
   constructor(private httpClient: HttpClient) { }
 
-  registerComic(formData: any){
-    return this.httpClient.post<Idata>('https://back.swap2go.ca/addcomics', formData)
+  registerComics(formData: any){
+    return this.httpClient.post<Icomic>('https://back.swap2go.ca/addcomics', formData)
   }
 
   createComic(data:any) {
-    return this.httpClient.post<Idata>(this.url, data);
+    return this.httpClient.post<Icomic>(this.url, data);
   }
 }

@@ -4,7 +4,7 @@
 </div>
   
   
-  <form [formGroup]="addComicForm" (ngSubmit)="register()" class="container">
+  <form [formGroup]="comicForm" (ngSubmit)="registerComic()" class="container">
     <div class="row">
       <div class="mb-3 col-lg-6">
         <label class="form-label">Title:</label>
@@ -105,7 +105,7 @@
 
     <div class="mb-3 col">
       <label class="form-label">Image:</label> <br />
-      <input type="text" class="form-control" formControlName="image">
+      <!-- <input type="text" class="form-control" formControlName="image"> -->
       <input class="mt-2"
         type="file"
         (change)="selectFile($event)"

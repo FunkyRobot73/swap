@@ -8,15 +8,15 @@ import { AddcomicService } from 'src/app/services/addcomic.service';
   styleUrls: ['./addcomic.component.css']
 })
 export class AddcomicComponent {
-  addComicForm: FormGroup;
+  comicForm: FormGroup;
   selectedImage: any;
 
   constructor(
     private formBuilder: FormBuilder,
     private addComicService: AddcomicService
   ) {
-    this.addComicForm = formBuilder.group({
-      title: ['', [Validators.required, Validators.email]],
+    this.comicForm = formBuilder.group({
+      title: ['', [Validators.required]],
       issue: ['', [Validators.required]],
       year: ['', [Validators.required]],
       type: ['', [Validators.required]],
@@ -31,7 +31,7 @@ export class AddcomicComponent {
       value: ['', [Validators.required]],
       isbn: ['', [Validators.required]],
       qty: ['', [Validators.required]],
-      image: ['', [Validators.required]]
+      // image: ['', [Validators.required]]
     });
   }
 
@@ -40,15 +40,15 @@ export class AddcomicComponent {
     console.log(this.selectedImage);
   }
 
-  register() {
+  registerComic() {
     let formData = new FormData();
     formData.append('image', this.selectedImage);
 
-    for (let key in this.addComicForm.controls) {
-      formData.append(key, this.addComicForm.get(key)?.value);
+    for (let key in this.comicForm.controls) {
+      formData.append(key, this.comicForm.get(key)?.value);
     }
 
-    this.addComicService.registerComic(formData).subscribe({
+    this.addComicService.registerComics(formData).subscribe({
       next: (result) => {
         console.log(result);
         alert('Comic has been successfully created!');
@@ -61,55 +61,56 @@ export class AddcomicComponent {
   }
 // Getter Method
   // All the methods below return a Form Control
-  get titleFormControl(){
-    return this.addComicForm.get('title')!;
-  }
+ 
+  // get titleFormControl(){
+  //   return this.addComicForm.get('title')!;
+  // }
   
-  get issueControl(){
-    return this.addComicForm.get('issue')!;
-  }
-  get yearFormControl(){
-    return this.addComicForm.get('year')!;
-  }
+  // get issueControl(){
+  //   return this.addComicForm.get('issue')!;
+  // }
+  // get yearFormControl(){
+  //   return this.addComicForm.get('year')!;
+  // }
   
-  get typeFormControl(){
-    return this.addComicForm.get('type')!;
-  }
+  // get typeFormControl(){
+  //   return this.addComicForm.get('type')!;
+  // }
   
-  get publisherFormControl(){
-    return this.addComicForm.get('publisher')!;
-  }
-  get conditionFormControl(){
-    return this.addComicForm.get('condition')!;
-  }
-  get keyControl(){
-    return this.addComicForm.get('key')!;
-  }
-  get descriptionFormControl(){
-    return this.addComicForm.get('description')!;
-  }
-  get shortControl(){
-    return this.addComicForm.get('short')!;
-  }
-  get charactersFormControl(){
-    return this.addComicForm.get('characters')!;
-  }
-  get writerFormControl(){
-    return this.addComicForm.get('writer')!;
-  }
-  get artistFormControl(){
-    return this.addComicForm.get('artist')!;
-  }
-  get valueFormControl(){
-    return this.addComicForm.get('value')!;
-  }
-  get isbnFormControl(){
-    return this.addComicForm.get('isbn')!;
-  }
-  get qtyFormControl(){
-    return this.addComicForm.get('qty')!;
-  }
-  get imageFormControl(){
-    return this.addComicForm.get('image')!;
-  }
+  // get publisherFormControl(){
+  //   return this.addComicForm.get('publisher')!;
+  // }
+  // get conditionFormControl(){
+  //   return this.addComicForm.get('condition')!;
+  // }
+  // get keyControl(){
+  //   return this.addComicForm.get('key')!;
+  // }
+  // get descriptionFormControl(){
+  //   return this.addComicForm.get('description')!;
+  // }
+  // get shortControl(){
+  //   return this.addComicForm.get('short')!;
+  // }
+  // get charactersFormControl(){
+  //   return this.addComicForm.get('characters')!;
+  // }
+  // get writerFormControl(){
+  //   return this.addComicForm.get('writer')!;
+  // }
+  // get artistFormControl(){
+  //   return this.addComicForm.get('artist')!;
+  // }
+  // get valueFormControl(){
+  //   return this.addComicForm.get('value')!;
+  // }
+  // get isbnFormControl(){
+  //   return this.addComicForm.get('isbn')!;
+  // }
+  // get qtyFormControl(){
+  //   return this.addComicForm.get('qty')!;
+  // }
+  // get imageFormControl(){
+  //   return this.addComicForm.get('image')!;
+  // }
 }
