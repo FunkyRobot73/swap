@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AddrecordService } from 'src/app/services/addrecord.service';
 
 @Component({
   selector: 'app-addrecord',
@@ -8,35 +9,30 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class AddrecordComponent {
   recordForm: FormGroup;
-  selectedImage: any;
-
+  
   constructor(
     private formBuilder: FormBuilder,
-    private blogService: BlogService
+    private addrecordService: AddrecordService
   ) {
-    this.registerForm = formBuilder.group({
-      email: ['', [Validators.required, Validators.email]],
-      name: ['', [Validators.required]],
+    this.recordForm = formBuilder.group({
+      artist: ['', [Validators.required]],
       title: ['', [Validators.required]],
-      post: ['', [Validators.required]],
+      year: ['', [Validators.required]],
+      type: ['', [Validators.required]],
       // image: ['', [Validators.required]]
     });
   }
 
-  selectFile(event: any): void {
-    this.selectedImage = event.target.files[0];
-    console.log(this.selectedImage);
-  }
-
-  register() {
+  
+  registerRecord() {
     let formData = new FormData();
-    formData.append('image', this.selectedImage);
+    
 
-    for (let key in this.registerForm.controls) {
-      formData.append(key, this.registerForm.get(key)?.value);
+    for (let key in this.recordForm.controls) {
+      formData.append(key, this.recordForm.get(key)?.value);
     }
 
-    this.blogService.registerBlog(formData).subscribe({
+    this.addrecordService.registerRecord(formData).subscribe({
       next: (result) => {
         console.log(result);
         alert('Blog has been successfully created!');
