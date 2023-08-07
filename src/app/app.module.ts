@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './components/main/main.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddcomicComponent } from './components/addcomic/addcomic.component';
+import { AddrecordComponent } from './components/addrecord/addrecord.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AddcomicComponent } from './components/addcomic/addcomic.component';
     FooterComponent,
     CarouselComponent,
     MainComponent,
-    AddcomicComponent
+    AddcomicComponent,
+    AddrecordComponent
   ],
   imports: [
     BrowserModule,
