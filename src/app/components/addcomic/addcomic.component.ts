@@ -60,57 +60,57 @@ export class AddcomicComponent {
     });
   }
 // Getter Method
-  // All the methods below return a Form Control
+//   All the methods below return a Form Control
  
-  // get titleFormControl(){
-  //   return this.addComicForm.get('title')!;
-  // }
+  get titleFormControl(){
+    return this.comicForm.get('title')!;
+  }
   
-  // get issueControl(){
-  //   return this.addComicForm.get('issue')!;
-  // }
-  // get yearFormControl(){
-  //   return this.addComicForm.get('year')!;
-  // }
+  get issueControl(){
+    return this.comicForm.get('issue')!;
+  }
+  get yearFormControl(){
+    return this.comicForm.get('year')!;
+  }
   
-  // get typeFormControl(){
-  //   return this.addComicForm.get('type')!;
-  // }
+  get typeFormControl(){
+    return this.comicForm.get('type')!;
+  }
   
-  // get publisherFormControl(){
-  //   return this.addComicForm.get('publisher')!;
-  // }
-  // get conditionFormControl(){
-  //   return this.addComicForm.get('condition')!;
-  // }
-  // get keyControl(){
-  //   return this.addComicForm.get('key')!;
-  // }
-  // get descriptionFormControl(){
-  //   return this.addComicForm.get('description')!;
-  // }
-  // get shortControl(){
-  //   return this.addComicForm.get('short')!;
-  // }
-  // get charactersFormControl(){
-  //   return this.addComicForm.get('characters')!;
-  // }
-  // get writerFormControl(){
-  //   return this.addComicForm.get('writer')!;
-  // }
-  // get artistFormControl(){
-  //   return this.addComicForm.get('artist')!;
-  // }
-  // get valueFormControl(){
-  //   return this.addComicForm.get('value')!;
-  // }
-  // get isbnFormControl(){
-  //   return this.addComicForm.get('isbn')!;
-  // }
-  // get qtyFormControl(){
-  //   return this.addComicForm.get('qty')!;
-  // }
-  // get imageFormControl(){
-  //   return this.addComicForm.get('image')!;
-  // }
+  get publisherFormControl(){
+    return this.comicForm.get('publisher')!;
+  }
+  get conditionFormControl(){
+    return this.comicForm.get('condition')!;
+  }
+  get keyControl(){
+    return this.comicForm.get('key')!;
+  }
+  get descriptionFormControl(){
+    return this.comicForm.get('description')!;
+  }
+  get shortControl(){
+    return this.comicForm.get('short')!;
+  }
+  get charactersFormControl(){
+    return this.comicForm.get('characters')!;
+  }
+  get writerFormControl(){
+    return this.comicForm.get('writer')!;
+  }
+  get artistFormControl(){
+    return this.comicForm.get('artist')!;
+  }
+  get valueFormControl(){
+    return this.comicForm.get('value')!;
+  }
+  get isbnFormControl(){
+    return this.comicForm.get('isbn')!;
+  }
+  get qtyFormControl(){
+    return this.comicForm.get('qty')!;
+  }
+  get imageFormControl(){
+    return this.comicForm.get('image')!;
+  }
 }

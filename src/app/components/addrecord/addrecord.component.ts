@@ -43,4 +43,24 @@ export class AddrecordComponent {
       },
     });
   }
+  
+  // Getter Method
+  //   All the methods below return a Form Control
+ 
+get artistFormControl(){
+  return this.recordForm.get('artist')!;
 }
+
+get titleFormControl(){
+  return this.recordForm.get('title')!;
+}
+
+get yearFormControl(){
+  return this.recordForm.get('year')!;
+}
+
+get typeFormControl(){
+  return this.recordForm.get('type')!;
+}
+
+};
