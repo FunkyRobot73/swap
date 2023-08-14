@@ -1,8 +1,8 @@
 export interface Irecord {
     id:number,
-    artist: string,
-    title: string,
-    year: string,
-    type: string
+    artisto: string,
+    titleo: string,
+    yearo: string,
+    typeo: string
     
 }

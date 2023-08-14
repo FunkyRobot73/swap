@@ -8,14 +8,14 @@ import { Irecord } from '../interfaces/irecord';
 })
 export class AddrecordService {
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient2: HttpClient) { }
 
-  registerRecord(formData: any){
-    return this.httpClient.post<Irecord>('https://back.swap2go.ca/addrecord', formData)
+  registerRecord(formData2: any){
+    return this.httpClient2.post<Irecord>('http://back.swap2go.ca/addrecord/', formData2)
   }
 
   getRecordData2(): Observable<any> {
-    return this.httpClient.get<any>("https://back.swap2go.ca/addrecord/")
+    return this.httpClient2.get<any>("https://back.swap2go.ca/addrecord/")
   }
 
 }

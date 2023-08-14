@@ -8,17 +8,17 @@ import { AddrecordService } from 'src/app/services/addrecord.service';
   styleUrls: ['./addrecord.component.css']
 })
 export class AddrecordComponent {
-  recordForm: FormGroup;
+  registerForm: FormGroup;
   
   constructor(
     private formBuilder: FormBuilder,
     private addrecordService: AddrecordService
   ) {
-    this.recordForm = formBuilder.group({
-      artist: ['', [Validators.required]],
-      title: ['', [Validators.required]],
-      year: ['', [Validators.required]],
-      type: ['', [Validators.required]],
+    this.registerForm = formBuilder.group({
+      artisto: ['', [Validators.required]],
+      titleo: ['', [Validators.required]],
+      yearo: ['', [Validators.required]],
+      typeo: ['', [Validators.required]],
       // image: ['', [Validators.required]]
     });
   }
@@ -28,14 +28,14 @@ export class AddrecordComponent {
     let formData = new FormData();
     
 
-    for (let key in this.recordForm.controls) {
-      formData.append(key, this.recordForm.get(key)?.value);
+    for (let keyy in this.registerForm.controls) {
+      formData.append(keyy, this.registerForm.get(keyy)?.value);
     }
 
     this.addrecordService.registerRecord(formData).subscribe({
       next: (result) => {
         console.log(result);
-        alert('Blog has been successfully created!');
+        alert('Record has been successfully created!');
       },
       error: (err) => {
         console.log(err.message);
@@ -48,19 +48,19 @@ export class AddrecordComponent {
   //   All the methods below return a Form Control
  
 get artistFormControl(){
-  return this.recordForm.get('artist')!;
+  return this.registerForm.get('artisto')!;
 }
 
 get titleFormControl(){
-  return this.recordForm.get('title')!;
+  return this.registerForm.get('titleo')!;
 }
 
 get yearFormControl(){
-  return this.recordForm.get('year')!;
+  return this.registerForm.get('yearo')!;
 }
 
 get typeFormControl(){
-  return this.recordForm.get('type')!;
+  return this.registerForm.get('typeo')!;
 }
 
 };
