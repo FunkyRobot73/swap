@@ -14,6 +14,8 @@ import { AddcomicComponent } from './components/addcomic/addcomic.component';
 import { AddrecordComponent } from './components/addrecord/addrecord.component';
 import { StoryComponent } from './components/story/story.component';
 
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,7 @@ import { StoryComponent } from './components/story/story.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
