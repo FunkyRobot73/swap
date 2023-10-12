@@ -18,6 +18,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { DccomicsComponent } from './components/dccomics/dccomics.component';
 import { DcpipePipe } from './pipes/dcpipe.pipe';
 import { MarvelcomicsComponent } from './components/marvelcomics/marvelcomics.component';
+import { SingleissueComponent } from './components/singleissue/singleissue.component';
+import { ImagecomicsComponent } from './components/imagecomics/imagecomics.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { MarvelcomicsComponent } from './components/marvelcomics/marvelcomics.co
     StoryComponent,
     DccomicsComponent,
     DcpipePipe,
-    MarvelcomicsComponent
+    MarvelcomicsComponent,
+    SingleissueComponent,
+    ImagecomicsComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { AddcomicComponent } from './components/addcomic/addcomic.component';
 import { AddrecordComponent } from './components/addrecord/addrecord.component';
 import { DccomicsComponent } from './components/dccomics/dccomics.component';
 import { MarvelcomicsComponent } from './components/marvelcomics/marvelcomics.component';
+import { ImagecomicsComponent } from './components/imagecomics/imagecomics.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'addcomic', component: AddcomicComponent},
   {path: 'addrecord', component: AddrecordComponent},
   {path: 'dccomics', component: DccomicsComponent},
-  {path: 'marvel', component: MarvelcomicsComponent}
+  {path: 'marvelcomics', component: MarvelcomicsComponent},
+  {path: 'imagecomics', component: ImagecomicsComponent}
 ];
 
 @NgModule({
