@@ -15,6 +15,7 @@ import { AddrecordComponent } from './components/addrecord/addrecord.component';
 import { StoryComponent } from './components/story/story.component';
 
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { DccomicsComponent } from './components/dccomics/dccomics.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     MainComponent,
     AddcomicComponent,
     AddrecordComponent,
-    StoryComponent
+    StoryComponent,
+    DccomicsComponent
   ],
   imports: [
     BrowserModule,
