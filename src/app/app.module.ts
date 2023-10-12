@@ -17,6 +17,7 @@ import { StoryComponent } from './components/story/story.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { DccomicsComponent } from './components/dccomics/dccomics.component';
 import { DcpipePipe } from './pipes/dcpipe.pipe';
+import { MarvelcomicsComponent } from './components/marvelcomics/marvelcomics.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { DcpipePipe } from './pipes/dcpipe.pipe';
     AddrecordComponent,
     StoryComponent,
     DccomicsComponent,
-    DcpipePipe
+    DcpipePipe,
+    MarvelcomicsComponent
   ],
   imports: [
     BrowserModule,
