@@ -20,6 +20,7 @@ import { DcpipePipe } from './pipes/dcpipe.pipe';
 import { MarvelcomicsComponent } from './components/marvelcomics/marvelcomics.component';
 import { SingleissueComponent } from './components/singleissue/singleissue.component';
 import { ImagecomicsComponent } from './components/imagecomics/imagecomics.component';
+import { IndycomicsComponent } from './components/indycomics/indycomics.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { ImagecomicsComponent } from './components/imagecomics/imagecomics.compo
     DcpipePipe,
     MarvelcomicsComponent,
     SingleissueComponent,
-    ImagecomicsComponent
+    ImagecomicsComponent,
+    IndycomicsComponent
   ],
   imports: [
     BrowserModule,
