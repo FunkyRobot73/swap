@@ -87,6 +87,7 @@
 }
 
 .money {
+  color: red;
   font-weight: bolder;
   font-size:xx-large;
 }

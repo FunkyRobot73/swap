@@ -19,18 +19,19 @@
                 
                 <div class="course-title rounder">
                     
-                    <h3 class="form-background mt-2 pt-2 pb-2 rounder"> {{item.title}} {{item.type | uppercase}}</h3>
+                    <h3 class="form-background mt-2 pt-2 pb-2 rounder"> {{item.title}} &nbsp; ({{ item.type | uppercase}})</h3>
                    <h3> {{item.artist}} ({{item.year}})</h3>
+                   <h3 class="money"> ${{item.price}}.00</h3>
                 </div>
             
-                <img width="200" alt="Comic Book for sale" [src]="'http://back.swap2go.ca/public/vinyl/' + item.image" class="mt-2">
+                <img width="200" alt="Vinyl/Record for sale" [src]="'http://back.swap2go.ca/public/vinyl/' + item.image" class="mt-2">
             
                 <div class="course-description">
             
-                    <p class="short">{{item.artist}}</p>
+                    <p class="short">{{item.genre}}</p>
             
                 </div>
-                <p class="money">${{item.title}}.00</p>
+                
                 <button  class="mt-2 mb-2">Add 2 Cart!</button> <button  class="ms-2">Offer Swap</button> 
             </div>
             
