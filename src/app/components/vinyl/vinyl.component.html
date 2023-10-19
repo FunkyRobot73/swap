@@ -1,0 +1,42 @@
+<!-- <div class="card" style="width: 18rem;" *ngFor="let item of comicbook">
+    <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{item.title}}</h5>
+      <p class="card-text">{{item.description}}</p>
+      <a href="#" class="btn btn-primary">Purchase</a>
+    </div>
+  </div> -->
+
+  <app-main></app-main>
+  <!-- <app-addcomic></app-addcomic>
+  <app-addrecord></app-addrecord> -->
+
+  <div class="container mt-2 bt-2 mb-2">
+    <div class="row">
+        <div *ngFor="let item of vinyl" class="column col-lg-6">
+    
+            <div class="container course-card rounder">
+                
+                <div class="course-title rounder">
+                    
+                    <h3 class="form-background mt-2 pt-2 pb-2 rounder"> {{item.title}} {{item.type | uppercase}}</h3>
+                   <h3> {{item.artist}} ({{item.year}})</h3>
+                </div>
+            
+                <img width="200" alt="Comic Book for sale" [src]="'http://back.swap2go.ca/public/vinyl/' + item.image" class="mt-2">
+            
+                <div class="course-description">
+            
+                    <p class="short">{{item.artist}}</p>
+            
+                </div>
+                <p class="money">${{item.title}}.00</p>
+                <button  class="mt-2 mb-2">Add 2 Cart!</button> <button  class="ms-2">Offer Swap</button> 
+            </div>
+            
+    
+        </div>
+      </div>
+  </div>
+
+  

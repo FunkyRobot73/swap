@@ -21,6 +21,7 @@ import { MarvelcomicsComponent } from './components/marvelcomics/marvelcomics.co
 import { SingleissueComponent } from './components/singleissue/singleissue.component';
 import { ImagecomicsComponent } from './components/imagecomics/imagecomics.component';
 import { IndycomicsComponent } from './components/indycomics/indycomics.component';
+import { VinylComponent } from './components/vinyl/vinyl.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { IndycomicsComponent } from './components/indycomics/indycomics.componen
     MarvelcomicsComponent,
     SingleissueComponent,
     ImagecomicsComponent,
-    IndycomicsComponent
+    IndycomicsComponent,
+    VinylComponent
   ],
   imports: [
     BrowserModule,

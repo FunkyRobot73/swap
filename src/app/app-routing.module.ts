@@ -7,6 +7,7 @@ import { DccomicsComponent } from './components/dccomics/dccomics.component';
 import { MarvelcomicsComponent } from './components/marvelcomics/marvelcomics.component';
 import { ImagecomicsComponent } from './components/imagecomics/imagecomics.component';
 import { IndycomicsComponent } from './components/indycomics/indycomics.component';
+import { VinylComponent } from './components/vinyl/vinyl.component';
 
 
 const routes: Routes = [
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: 'dccomics', component: DccomicsComponent},
   {path: 'marvelcomics', component: MarvelcomicsComponent},
   {path: 'imagecomics', component: ImagecomicsComponent},
-  {path: 'othercomics', component: IndycomicsComponent}
+  {path: 'othercomics', component: IndycomicsComponent},
+  {path: 'vinyl', component: VinylComponent}
 ];
 
 @NgModule({

@@ -13,4 +13,8 @@ export class ComicService {
   getData(){
     return this.http.get('https://back.swap2go.ca/comics')
   }
+
+  getData2(){
+    return this.http.get('https://back.swap2go.ca/records')
+  }
 }
