@@ -8,6 +8,8 @@ import { Icomic } from '../interfaces/idata';
 export class AddcomicService {
   url = "https://back.swap2go.ca/addcomics"
 
+  url2 = 'https://back.swap2go.ca/comics'
+
   constructor(private httpClient: HttpClient) { }
 
   registerComics(formData: any){
