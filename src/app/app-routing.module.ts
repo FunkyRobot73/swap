@@ -9,6 +9,9 @@ import { ImagecomicsComponent } from './components/imagecomics/imagecomics.compo
 import { IndycomicsComponent } from './components/indycomics/indycomics.component';
 import { VinylComponent } from './components/vinyl/vinyl.component';
 import { GoldenComponent } from './components/golden/golden.component';
+import { SilverComponent } from './components/silver/silver.component';
+import { BronzeComponent } from './components/bronze/bronze.component';
+import { ModernComponent } from './components/modern/modern.component';
 
 
 const routes: Routes = [
@@ -21,7 +24,10 @@ const routes: Routes = [
   {path: 'imagecomics', component: ImagecomicsComponent},
   {path: 'othercomics', component: IndycomicsComponent},
   {path: 'vinyl', component: VinylComponent},
-  {path: 'golden', component: GoldenComponent}
+  {path: 'golden', component: GoldenComponent},
+  {path: 'silver', component: SilverComponent},
+  {path: 'bronze', component: BronzeComponent},
+  {path: 'modern', component: ModernComponent}
 ];
 
 @NgModule({

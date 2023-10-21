@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'golden'
+  name: 'goldenpipe'
 })
 export class GoldenPipe implements PipeTransform {
 

@@ -6,6 +6,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class SilverPipe implements PipeTransform {
 
   transform(comics: any[], year: string) {
-    return comics.filter(comic => parseInt(comic.year) <= 1979);
+    return comics.filter(comic => parseInt(comic.year) <= 1979  && parseInt(comic.year) >= 1960);
   }
 }

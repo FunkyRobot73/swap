@@ -1,12 +1,12 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'bronze'
+  name: 'bronzepipe'
 })
 export class BronzePipe implements PipeTransform {
 
   transform(comics: any[], year: string) {
-    return comics.filter(comic => parseInt(comic.year) <= 1989);
+    return comics.filter(comic => parseInt(comic.year) <= 1999 && parseInt(comic.year) <= 1980);
   }
 
 }
