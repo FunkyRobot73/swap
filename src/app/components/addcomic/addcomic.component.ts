@@ -31,7 +31,7 @@ export class AddcomicComponent {
       value: ['', [Validators.required]],
       isbn: ['', [Validators.required]],
       qty: ['', [Validators.required]],
-      // image: ['', [Validators.required]]
+      image: ['', [Validators.required]]
     });
   }
 
@@ -40,18 +40,18 @@ export class AddcomicComponent {
     console.log(this.selectedImage);
   }
 
-  registerComic() {
+  register() {
     let formData = new FormData();
     formData.append('image', this.selectedImage);
 
     for (let key in this.registerForm.controls) {
       formData.append(key, this.registerForm.get(key)?.value);
-    }
+     }
 
-    this.addComicService.registerComics(formData).subscribe({
+    this.addComicService.registerComic(formData).subscribe({
       next: (result) => {
         console.log(result);
-        alert('Comic has been successfully created!');
+        alert('Comic (Dude) has been successfully created!');
       },
       error: (err) => {
         console.log(err.message);

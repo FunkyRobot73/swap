@@ -57,8 +57,15 @@
   /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
     float: center;
-    width: 33%;
+    width: 20%;
     padding: 5px;
+  }
+
+  @media screen and (max-width:1280px) {
+    .column {
+      
+      width:25%;
+    }
   }
 
   @media screen and (max-width:1028px) {
@@ -110,4 +117,8 @@
 .money {
   font-weight: bolder;
   font-size:xx-large;
+}
+
+.height-div1 {
+  height:200px;
 }

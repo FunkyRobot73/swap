@@ -1,4 +1,4 @@
-export interface Icomic {
+export interface Idata {
     id:number,
     title: string,
     issue: string,

@@ -13,11 +13,11 @@
 
   <div class="container mt-2 bt-2 mb-2">
     <div class="row">
-        <div *ngFor="let item of comicbook" class="column">
+        <div *ngFor="let item of comicbook" class="column" >
     
             <div class="container course-card rounder">
                 
-                <div class="course-title rounder">
+                <div class="course-title rounder height-div">
                     
                     <h3 class="form-background mt-2 pt-2 pb-2 rounder"> {{item.title}} {{item.issue | uppercase}}</h3>
                    <h3> {{item.publisher}} ({{item.year}})</h3>
