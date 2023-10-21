@@ -8,6 +8,7 @@ import { MarvelcomicsComponent } from './components/marvelcomics/marvelcomics.co
 import { ImagecomicsComponent } from './components/imagecomics/imagecomics.component';
 import { IndycomicsComponent } from './components/indycomics/indycomics.component';
 import { VinylComponent } from './components/vinyl/vinyl.component';
+import { GoldenComponent } from './components/golden/golden.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: 'marvelcomics', component: MarvelcomicsComponent},
   {path: 'imagecomics', component: ImagecomicsComponent},
   {path: 'othercomics', component: IndycomicsComponent},
-  {path: 'vinyl', component: VinylComponent}
+  {path: 'vinyl', component: VinylComponent},
+  {path: 'golden', component: GoldenComponent}
 ];
 
 @NgModule({

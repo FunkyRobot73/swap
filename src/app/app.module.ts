@@ -22,6 +22,14 @@ import { SingleissueComponent } from './components/singleissue/singleissue.compo
 import { ImagecomicsComponent } from './components/imagecomics/imagecomics.component';
 import { IndycomicsComponent } from './components/indycomics/indycomics.component';
 import { VinylComponent } from './components/vinyl/vinyl.component';
+import { GoldenComponent } from './components/golden/golden.component';
+import { GoldenPipe } from './pipes/golden.pipe';
+import { SilverPipe } from './pipes/silver.pipe';
+import { BronzePipe } from './pipes/bronze.pipe';
+import { ModernPipe } from './pipes/modern.pipe';
+import { SilverComponent } from './components/silver/silver.component';
+import { BronzeComponent } from './components/bronze/bronze.component';
+import { ModernComponent } from './components/modern/modern.component';
 
 
 @NgModule({
@@ -41,7 +49,15 @@ import { VinylComponent } from './components/vinyl/vinyl.component';
     SingleissueComponent,
     ImagecomicsComponent,
     IndycomicsComponent,
-    VinylComponent
+    VinylComponent,
+    GoldenComponent,
+    GoldenPipe,
+    SilverPipe,
+    BronzePipe,
+    ModernPipe,
+    SilverComponent,
+    BronzeComponent,
+    ModernComponent
   ],
   imports: [
     BrowserModule,

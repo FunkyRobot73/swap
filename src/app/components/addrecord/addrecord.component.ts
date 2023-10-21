@@ -15,11 +15,15 @@ export class AddrecordComponent {
     private addrecordService: AddrecordService
   ) {
     this.registerForm = formBuilder.group({
-      artisto: ['', [Validators.required]],
-      titleo: ['', [Validators.required]],
-      yearo: ['', [Validators.required]],
-      typeo: ['', [Validators.required]],
-      // image: ['', [Validators.required]]
+      artist: ['', [Validators.required]],
+      title: ['', [Validators.required]],
+      year: ['', [Validators.required]],
+      type: ['', [Validators.required]],
+      genre: ['', [Validators.required]],      
+      image: ['', [Validators.required]],
+      code: ['', [Validators.required]],
+      condition: ['', [Validators.required]],
+      price: ['', [Validators.required]]
     });
   }
 
@@ -48,19 +52,19 @@ export class AddrecordComponent {
   //   All the methods below return a Form Control
  
 get artistFormControl(){
-  return this.registerForm.get('artisto')!;
+  return this.registerForm.get('artist')!;
 }
 
 get titleFormControl(){
-  return this.registerForm.get('titleo')!;
+  return this.registerForm.get('title')!;
 }
 
 get yearFormControl(){
-  return this.registerForm.get('yearo')!;
+  return this.registerForm.get('year')!;
 }
 
 get typeFormControl(){
-  return this.registerForm.get('typeo')!;
+  return this.registerForm.get('type')!;
 }
 
 };
