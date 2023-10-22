@@ -8,6 +8,7 @@ import { ComicService } from 'src/app/services/comic.service';
 })
 export class DccomicsComponent {
   DC:any = "DC";
+  silver:any = 1959;
   comicbook: any;
   constructor(private ComicService: ComicService) {}
 
