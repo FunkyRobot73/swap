@@ -34,6 +34,11 @@ import { DcgoldenComponent } from './components/dc/dcgolden/dcgolden.component';
 import { DcsilverComponent } from './components/dc/dcsilver/dcsilver.component';
 import { DcbronzeComponent } from './components/dc/dcbronze/dcbronze.component';
 import { DcmodernComponent } from './components/dc/dcmodern/dcmodern.component';
+import { MarvelgoldenComponent } from './components/marvel/marvelgolden/marvelgolden.component';
+import { MarvelsilverComponent } from './components/marvel/marvelsilver/marvelsilver.component';
+import { MarvelbronzeComponent } from './components/marvel/marvelbronze/marvelbronze.component';
+import { MarvelmodernComponent } from './components/marvel/marvelmodern/marvelmodern.component';
+import { MarvelpipePipe } from './pipes/marvelpipe.pipe';
 
 
 @NgModule({
@@ -65,7 +70,12 @@ import { DcmodernComponent } from './components/dc/dcmodern/dcmodern.component';
     DcgoldenComponent,
     DcsilverComponent,
     DcbronzeComponent,
-    DcmodernComponent
+    DcmodernComponent,
+    MarvelgoldenComponent,
+    MarvelsilverComponent,
+    MarvelbronzeComponent,
+    MarvelmodernComponent,
+    MarvelpipePipe
   ],
   imports: [
     BrowserModule,

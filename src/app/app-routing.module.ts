@@ -16,6 +16,9 @@ import { DcgoldenComponent } from './components/dc/dcgolden/dcgolden.component';
 import { DcsilverComponent } from './components/dc/dcsilver/dcsilver.component';
 import { DcbronzeComponent } from './components/dc/dcbronze/dcbronze.component';
 import { DcmodernComponent } from './components/dc/dcmodern/dcmodern.component';
+import { MarvelsilverComponent } from './components/marvel/marvelsilver/marvelsilver.component';
+import { MarvelbronzeComponent } from './components/marvel/marvelbronze/marvelbronze.component';
+import { MarvelmodernComponent } from './components/marvel/marvelmodern/marvelmodern.component';
 
 
 const routes: Routes = [
@@ -35,7 +38,12 @@ const routes: Routes = [
   {path: 'dcgolden', component: DcgoldenComponent},
   {path: 'dcsilver', component: DcsilverComponent},
   {path: 'dcbronze', component: DcbronzeComponent},
-  {path: 'dcmodern', component: DcmodernComponent}
+  {path: 'dcmodern', component: DcmodernComponent},
+  
+  {path: 'marvelgolden', component: DcgoldenComponent},
+  {path: 'marvelsilver', component: MarvelsilverComponent},
+  {path: 'marvelbronze', component: MarvelbronzeComponent},
+  {path: 'marvelmodern', component: MarvelmodernComponent}
 ];
 
 @NgModule({

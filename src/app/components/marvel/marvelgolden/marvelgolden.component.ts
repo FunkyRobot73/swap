@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { ComicService } from 'src/app/services/comic.service';
 
 @Component({
-  selector: 'app-dcgolden',
-  templateUrl: './dcgolden.component.html',
-  styleUrls: ['./dcgolden.component.css']
+  selector: 'app-marvelgolden',
+  templateUrl: './marvelgolden.component.html',
+  styleUrls: ['./marvelgolden.component.css']
 })
-export class DcgoldenComponent {
+export class MarvelgoldenComponent {
   golden:any = 1959;
-  DC: any = "DC";
+  MARVEL: any = "marvel";
   comicbook: any;
   constructor(private ComicService: ComicService) {}
 
