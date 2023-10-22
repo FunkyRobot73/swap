@@ -8,6 +8,7 @@ import { ComicService } from 'src/app/services/comic.service';
 })
 export class DcmodernComponent {
   modern:any = 2000;
+  DC:any = "DC";
   comicbook: any;
   constructor(private ComicService: ComicService) {}
 
