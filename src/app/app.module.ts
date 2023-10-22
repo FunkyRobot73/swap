@@ -15,7 +15,7 @@ import { AddrecordComponent } from './components/addrecord/addrecord.component';
 import { StoryComponent } from './components/story/story.component';
 
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-import { DccomicsComponent } from './components/dccomics/dccomics.component';
+
 import { DcpipePipe } from './pipes/dcpipe.pipe';
 import { MarvelcomicsComponent } from './components/marvelcomics/marvelcomics.component';
 import { SingleissueComponent } from './components/singleissue/singleissue.component';
@@ -52,7 +52,7 @@ import { MarvelpipePipe } from './pipes/marvelpipe.pipe';
     AddcomicComponent,
     AddrecordComponent,
     StoryComponent,
-    DccomicsComponent,
+    
     DcpipePipe,
     MarvelcomicsComponent,
     SingleissueComponent,
