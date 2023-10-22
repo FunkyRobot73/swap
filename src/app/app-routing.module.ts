@@ -12,6 +12,10 @@ import { GoldenComponent } from './components/golden/golden.component';
 import { SilverComponent } from './components/silver/silver.component';
 import { BronzeComponent } from './components/bronze/bronze.component';
 import { ModernComponent } from './components/modern/modern.component';
+import { DcgoldenComponent } from './components/dc/dcgolden/dcgolden.component';
+import { DcsilverComponent } from './components/dc/dcsilver/dcsilver.component';
+import { DcbronzeComponent } from './components/dc/dcbronze/dcbronze.component';
+import { DcmodernComponent } from './components/dc/dcmodern/dcmodern.component';
 
 
 const routes: Routes = [
@@ -27,7 +31,11 @@ const routes: Routes = [
   {path: 'golden', component: GoldenComponent},
   {path: 'silver', component: SilverComponent},
   {path: 'bronze', component: BronzeComponent},
-  {path: 'modern', component: ModernComponent}
+  {path: 'modern', component: ModernComponent},
+  {path: 'dcgolden', component: DcgoldenComponent},
+  {path: 'dcsilver', component: DcsilverComponent},
+  {path: 'dcbronze', component: DcbronzeComponent},
+  {path: 'dcmodern', component: DcmodernComponent}
 ];
 
 @NgModule({

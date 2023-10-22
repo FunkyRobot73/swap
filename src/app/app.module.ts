@@ -30,6 +30,10 @@ import { ModernPipe } from './pipes/modern.pipe';
 import { SilverComponent } from './components/silver/silver.component';
 import { BronzeComponent } from './components/bronze/bronze.component';
 import { ModernComponent } from './components/modern/modern.component';
+import { DcgoldenComponent } from './components/dc/dcgolden/dcgolden.component';
+import { DcsilverComponent } from './components/dc/dcsilver/dcsilver.component';
+import { DcbronzeComponent } from './components/dc/dcbronze/dcbronze.component';
+import { DcmodernComponent } from './components/dc/dcmodern/dcmodern.component';
 
 
 @NgModule({
@@ -57,7 +61,11 @@ import { ModernComponent } from './components/modern/modern.component';
     ModernPipe,
     SilverComponent,
     BronzeComponent,
-    ModernComponent
+    ModernComponent,
+    DcgoldenComponent,
+    DcsilverComponent,
+    DcbronzeComponent,
+    DcmodernComponent
   ],
   imports: [
     BrowserModule,
