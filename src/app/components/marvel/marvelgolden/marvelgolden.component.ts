@@ -8,7 +8,7 @@ import { ComicService } from 'src/app/services/comic.service';
 })
 export class MarvelgoldenComponent {
   golden:any = 1959;
-  MARVEL: any = "marvel";
+  MARVEL: any = "MARVEL";
   comicbook: any;
   constructor(private ComicService: ComicService) {}
 

@@ -19,6 +19,7 @@ import { DcmodernComponent } from './components/dc/dcmodern/dcmodern.component';
 import { MarvelsilverComponent } from './components/marvel/marvelsilver/marvelsilver.component';
 import { MarvelbronzeComponent } from './components/marvel/marvelbronze/marvelbronze.component';
 import { MarvelmodernComponent } from './components/marvel/marvelmodern/marvelmodern.component';
+import { MarvelgoldenComponent } from './components/marvel/marvelgolden/marvelgolden.component';
 
 
 const routes: Routes = [
@@ -40,7 +41,7 @@ const routes: Routes = [
   {path: 'dcbronze', component: DcbronzeComponent},
   {path: 'dcmodern', component: DcmodernComponent},
   
-  {path: 'marvelgolden', component: DcgoldenComponent},
+  {path: 'marvelgolden', component: MarvelgoldenComponent},
   {path: 'marvelsilver', component: MarvelsilverComponent},
   {path: 'marvelbronze', component: MarvelbronzeComponent},
   {path: 'marvelmodern', component: MarvelmodernComponent}
