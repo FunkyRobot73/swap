@@ -54,12 +54,40 @@
     background: lightsalmon;
   }
   
-  /* Three image containers (use 25% for four, and 50% for two, etc) */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
-    float: center;
-    width: 33.3%;
-    padding: 5px;
+  float: center;
+  width: 20%;
+  padding: 5px;
+}
+
+@media screen and (max-width:1280px) {
+  .column {
+    
+    width:25%;
   }
+}
+
+@media screen and (max-width:1028px) {
+  .column {
+    
+    width:33%;
+  }
+}
+
+@media screen and (max-width:760px) {
+  .column {
+    
+    width:50%;
+  }
+}
+
+@media screen and (max-width:500px) {
+.column {
+  
+  width:100%;
+}
+}
   
   /* Clear floats after image containers */
   .row::after {
