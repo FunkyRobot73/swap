@@ -1,0 +1,435 @@
+.body-text{
+    font-size: 1.5rem;
+}
+
+.form-background{
+    background-color: #6C63FF;
+    padding-inline: 1rem;
+    font-weight: bold;
+    margin-bottom: 4em;
+}
+
+.tab{
+    display: inline;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    
+}
+.negative-margin{
+    margin-left: -12px;
+}
+form{
+    margin-block: auto;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.catchPhrase{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.btn{
+    padding-inline: 3rem;
+    padding-block: 0.45rem;
+    background-color: #FF6347;
+}
+img{
+    width: 100%;
+    height:auto;
+}
+
+input.finder {
+    border: 2px solid black;
+}
+
+div {
+    position: relative; /* To create a reference position for the image */
+}
+
+
+
+  .angel-image{
+    max-width: 250px;
+    max-height: 250px;
+    /* aspect-ratio: 1; */
+}
+
+.body-text{
+    font-size: 1.5rem;
+}
+
+.form-background{
+    background-color: #6C63FF;
+    padding-inline: 1rem;
+    font-weight: bold;
+    margin-bottom: 4em;
+}
+
+.tab{
+    display: inline;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    
+}
+.negative-margin{
+    margin-left: -12px;
+}
+form{
+    margin-block: auto;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.catchPhrase{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.btn{
+    padding-inline: 3rem;
+    padding-block: 0.45rem;
+    background-color: #FF6347;
+}
+img{
+    width: 100%;
+    height:auto;
+}
+
+input.finder {
+    border: 2px solid black;
+}
+
+div {
+    position: relative; /* To create a reference position for the image */
+}
+
+.overlap {
+    position: absolute; 
+    /* To position the image relative to the div */
+    left: -40px; /* Move the image 100 pixels to the left */
+    margin-left: -40px; /* Overlap the div with a negative margin */
+    margin-top: -40px; /* Overlap the div with a negative margin */
+    
+    z-index:-1
+  }
+  
+  .container1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .quote-div {
+	position: relative;
+	/* width: 600px; */
+	margin: auto;
+	padding: 1rem;
+	background-color: transparent;
+	background-image: linear-gradient(
+			-45deg,
+			transparent,
+			transparent 2%,
+			white 2%,
+			white 85%,
+			transparent,
+			85%,
+			transparent
+		),
+		linear-gradient(to bottom right, #BED1F9, #BED1F9 90%, transparent 90%);
+	background-position: top left, 0.2em 0.2em;
+	background-repeat: no-repeat;
+	filter: drop-shadow(0 0 15px #0005);
+}
+
+.border {
+    border: 2em;
+    border-color: black;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align-last: auto;
+    padding: 1em;
+}
+
+.border-01 {
+    border: 2em;
+    border-color: black;
+    background-color: #BED1F9;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align-last: auto;
+    padding: 1em;
+}
+
+.hero-button {
+    background-color: #FF6347;
+    border: none;
+}
+
+.angel-button {
+    background-color: #6C63FF;
+}
+
+body {
+    background-color: #eee;
+}
+
+.border {
+    border: 2em;
+    border-color: black;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align-last: auto;
+    padding: 1em;
+}
+
+.border-01 {
+    border: 2em;
+    border-color: black;
+    background-color: #BED1F9;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align-last: auto;
+    padding: 1em;
+}
+
+.angel-image{
+    max-width: 250px;
+    max-height: 250px;
+    /* aspect-ratio: 1; */
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* max-width: 300px; */
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  
+  
+  .container1 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  button:hover {
+    background: #f33716;
+  }
+
+  
+  .spacer {
+    display: flex;
+    justify-content:space-evenly;
+  }
+
+  .profile-photo {
+    align-items: center;
+    
+  }
+
+
+
+
+a {
+    text-decoration: none;
+}
+.deco {
+    text-decoration: none;
+}
+
+.story-image {
+    width: 50%;
+}
+
+.avatar {
+    width: 100%;
+}
+
+.slider-text .breadcrumbs {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    z-index: 99;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+    letter-spacing: 2px;
+}
+
+.slider-text .breadcrumbs span {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.slider-text .breadcrumbs span a {
+    color: #000000;
+}
+
+.slider-text .bread {
+    font-weight: 900;
+    color: #000000 !important;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gutters>.col,
+.no-gutters>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.ftco-section {
+    padding: 3em 0;
+    position: relative;
+}
+
+@media (max-width: 767.98px) {
+    .ftco-section {
+        padding: 1em 0;
+    }
+}
+
+.tagcloud a {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 4px 10px;
+    margin-bottom: 7px;
+    margin-right: 4px;
+    border-radius: 4px;
+    color: #000000;
+    border: 1px solid #ccc;
+    font-size: 11px;
+}
+
+.tagcloud a:hover {
+    border: 1px solid #000;
+}
+
+.sidebar-box .border {
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+.sidebar-box .company-wrap {
+    display: block;
+}
+
+.sidebar-box .text h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.sidebar-box .text h3 a {
+    color: #000000;
+}
+
+.sidebar-box .text p .number {
+    font-size: 16px;
+    background: #ffb9ad;
+    color: #fff;
+    padding: 2px 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.sidebar-box {
+    margin-bottom: 30px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.sidebar-box *:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-box h3.heading-2 {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.sidebar-box h3.heading-3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.categories li,
+.sidelink li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dee2e6;
+    list-style: none;
+}
+
+.categories li:last-child,
+.sidelink li:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.categories li a,
+.sidelink li a {
+    display: block;
+    color: #1a1a1a;
+}
+
+.categories li a span,
+.sidelink li a span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #ccc;
+}
+
+.categories li.active a,
+.sidelink li.active a {
+    color: #000000;
+    font-style: italic;
+}
+
+.quote-div {
+	position: relative;
+	/* width: 600px; */
+	margin: auto;
+	padding: 1rem;
+	background-color: transparent;
+	background-image: linear-gradient(
+			-45deg,
+			transparent,
+			transparent 2%,
+			white 2%,
+			white 85%,
+			transparent,
+			85%,
+			transparent
+		),
+		linear-gradient(to bottom right, #BED1F9, #BED1F9 90%, transparent 90%);
+	background-position: top left, 0.2em 0.2em;
+	background-repeat: no-repeat;
+	filter: drop-shadow(0 0 15px #0005);
+}
+
+
+.hero-button {
+    background-color: #FF6347;
+    border: none;
+}
+
+.angel-button {
+    background-color: #6C63FF;
+}
+
+
+  
