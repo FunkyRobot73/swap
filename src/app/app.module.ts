@@ -39,6 +39,10 @@ import { MarvelsilverComponent } from './components/marvel/marvelsilver/marvelsi
 import { MarvelbronzeComponent } from './components/marvel/marvelbronze/marvelbronze.component';
 import { MarvelmodernComponent } from './components/marvel/marvelmodern/marvelmodern.component';
 import { MarvelpipePipe } from './pipes/marvelpipe.pipe';
+import { HomePanelComponent } from './panel/home-panel/home-panel.component';
+import { DcPanelComponent } from './panel/dc-panel/dc-panel.component';
+import { DccomicsComponent } from './components/dccomics/dccomics.component';
+
 
 
 @NgModule({
@@ -52,7 +56,7 @@ import { MarvelpipePipe } from './pipes/marvelpipe.pipe';
     AddcomicComponent,
     AddrecordComponent,
     StoryComponent,
-    
+    DccomicsComponent,
     DcpipePipe,
     MarvelcomicsComponent,
     SingleissueComponent,
@@ -75,7 +79,9 @@ import { MarvelpipePipe } from './pipes/marvelpipe.pipe';
     MarvelsilverComponent,
     MarvelbronzeComponent,
     MarvelmodernComponent,
-    MarvelpipePipe
+    MarvelpipePipe,
+    HomePanelComponent,
+    DcPanelComponent,
   ],
   imports: [
     BrowserModule,
