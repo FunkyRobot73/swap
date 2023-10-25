@@ -1,0 +1,51 @@
+<!-- <div class="card" style="width: 18rem;" *ngFor="let item of comicbook">
+    <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{item.title}}</h5>
+      <p class="card-text">{{item.description}}</p>
+      <a href="#" class="btn btn-primary">Purchase</a>
+    </div>
+  </div> -->
+
+  
+  <!-- <app-addcomic></app-addcomic>
+  <app-addrecord></app-addrecord> -->
+  <app-home-panel></app-home-panel>
+
+  <div>
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Search">
+    <button (click)="sortData()">Sort</button>
+  </div>
+
+  <div class="container mt-2 bt-2 mb-2">
+    <div class="row">
+        <div *ngFor="let item of comicbook" class="column" >
+    
+            <div class="container course-card rounder">
+                
+                <div class="course-title rounder height-div">
+                    
+                    <h3 class="form-background mt-2 pt-2 pb-2 rounder"> {{item.title}} {{item.issue }}</h3>
+                   <h3> {{item.publisher}} ({{item.year}})</h3>
+                </div>
+            
+                <img width="75%" alt="Comic Book for sale" [src]="'http://back.swap2go.ca/public/' + item.image" class="mt-2">
+            
+                <div class="course-description">
+            
+                    <p class="short">{{item.short}}</p>
+            
+                </div>
+                <p class="money">${{item.value}}.00</p>
+                <button  class="ms-2 mt-2 mb-3">Add 2 Cart!</button> <button  class="ms-2 mb-3">Offer Swap</button> 
+
+                <p><button role="link" class="rounded btn-ebay mt-2 mb-2"><a href="https://www.ebay.ca/sch/i.html?_from=R40&_trksid=p4432023.m570.l2632&_nkw={{item.title}}+{{item.publisher}}+{{item.issue}}&_sacat=63" style="text-decoration:none" class="ebay" target=”_blank”>Compare on eBay</a></button></p>
+                
+            </div>
+            
+    
+        </div>
+      </div>
+  </div>
+
+  

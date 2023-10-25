@@ -20,6 +20,7 @@ import { MarvelsilverComponent } from './components/marvel/marvelsilver/marvelsi
 import { MarvelbronzeComponent } from './components/marvel/marvelbronze/marvelbronze.component';
 import { MarvelmodernComponent } from './components/marvel/marvelmodern/marvelmodern.component';
 import { MarvelgoldenComponent } from './components/marvel/marvelgolden/marvelgolden.component';
+import { SearchDisplayComponent } from './components/search-display/search-display.component';
 
 
 const routes: Routes = [
@@ -44,7 +45,8 @@ const routes: Routes = [
   {path: 'marvelgolden', component: MarvelgoldenComponent},
   {path: 'marvelsilver', component: MarvelsilverComponent},
   {path: 'marvelbronze', component: MarvelbronzeComponent},
-  {path: 'marvelmodern', component: MarvelmodernComponent}
+  {path: 'marvelmodern', component: MarvelmodernComponent},
+  {path: 'search-display', component: SearchDisplayComponent}
 ];
 
 @NgModule({
