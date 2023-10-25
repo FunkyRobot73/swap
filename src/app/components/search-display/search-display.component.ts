@@ -22,6 +22,10 @@ export class SearchDisplayComponent implements OnInit {
   }
 
   sortData() {
-    // Implement your sorting logic here based on user preference
+    this.filteredData = this.comicbook.filter((item:any) => {
+      const values = Object.values(item).join('').toLowerCase();
+      return values.includes(this.searchTerm.toLowerCase());
+    });
   }
+  
 }
