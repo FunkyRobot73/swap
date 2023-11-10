@@ -19,3 +19,10 @@ button{
 img{
     height: 15rem;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
