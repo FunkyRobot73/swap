@@ -114,3 +114,5 @@ export class AddcomicComponent {
     return this.registerForm.get('image')!;
   }
 }
+
+// I gotta fix this shit...
