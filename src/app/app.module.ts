@@ -44,6 +44,7 @@ import { DcPanelComponent } from './panel/dc-panel/dc-panel.component';
 import { DccomicsComponent } from './components/dccomics/dccomics.component';
 import { MarvelPanelComponent } from './panel/marvel-panel/marvel-panel.component';
 import { SearchDisplayComponent } from './components/search-display/search-display.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 
@@ -86,6 +87,7 @@ import { SearchDisplayComponent } from './components/search-display/search-displ
     DcPanelComponent,
     MarvelPanelComponent,
     SearchDisplayComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
