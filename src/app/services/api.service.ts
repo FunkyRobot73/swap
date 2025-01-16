@@ -10,6 +10,10 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
+  getData(){
+    return this.http.get(this.apiUrl)
+  }
+
   postFormData(formData: FormData): Observable<any> {
     return this.http.post(this.apiUrl, formData, {
       headers: new HttpHeaders({
