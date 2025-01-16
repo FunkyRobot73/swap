@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Idata } from '../interfaces/idata';
 import { Observable } from 'rxjs';
@@ -7,17 +7,19 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AddcomicService {
-  url = "https://back.swap2go.ca/addcomics/"
+  url = "http://back.swap2go.ca/addcomics"
 
-  url2 = 'https://back.swap2go.ca/comics'
+  url2 = 'https://back.swap2go.ca'
 
   constructor(private httpClient: HttpClient) { }
 
-  registerComic(formData: any){
-    return this.httpClient.post<Idata>('https://back.swap2go.ca/addcomics', formData)
+  registerComic(formData: any): Observable<any>{
+    return this.httpClient.post(this.url, formData, {
+      // headers: new HttpHeaders({})
+    })
   }
 
-  createComic(data:any) {
+  createComic(data:any): Observable<any> {
     return this.httpClient.post<Idata>(this.url, data);
   }
 }

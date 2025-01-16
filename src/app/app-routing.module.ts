@@ -21,11 +21,13 @@ import { MarvelbronzeComponent } from './components/marvel/marvelbronze/marvelbr
 import { MarvelmodernComponent } from './components/marvel/marvelmodern/marvelmodern.component';
 import { MarvelgoldenComponent } from './components/marvel/marvelgolden/marvelgolden.component';
 import { SearchDisplayComponent } from './components/search-display/search-display.component';
+import { HomecomComponent } from './components/homecom/homecom.component';
 
 
 const routes: Routes = [
   {path: '', redirectTo:'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
+  {path: 'homec', component: HomecomComponent},
   {path: 'addcomic', component: AddcomicComponent},
   {path: 'addrecord', component: AddrecordComponent},
   {path: 'dccomics', component: DccomicsComponent},

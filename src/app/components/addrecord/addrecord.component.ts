@@ -15,15 +15,16 @@ export class AddrecordComponent {
     private addrecordService: AddrecordService
   ) {
     this.registerForm = formBuilder.group({
+      id: ['', [Validators.required]],
       artist: ['', [Validators.required]],
       title: ['', [Validators.required]],
       year: ['', [Validators.required]],
-      type: ['', [Validators.required]],
-      genre: ['', [Validators.required]],      
-      image: ['', [Validators.required]],
-      code: ['', [Validators.required]],
-      condition: ['', [Validators.required]],
-      price: ['', [Validators.required]]
+      type: ['', [Validators.required]]
+      // genre: ['', [Validators.required]],      
+      // image: ['', [Validators.required]],
+      // code: ['', [Validators.required]],
+      // condition: ['', [Validators.required]],
+      // price: ['', [Validators.required]]
     });
   }
 
