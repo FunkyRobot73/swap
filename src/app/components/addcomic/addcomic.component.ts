@@ -8,8 +8,8 @@ import { AddcomicService } from 'src/app/services/addcomic.service';
   styleUrls: ['./addcomic.component.css']
 })
 export class AddcomicComponent {
-  // registerForm: FormGroup;
-  // selectedImage: any;
+  registerForm: FormGroup;
+  selectedImage: any;
   formData: any = {
     title: "",
     issue: ""
@@ -17,28 +17,29 @@ export class AddcomicComponent {
   selectedFile: File | null = null;
 
   constructor(
-    // private formBuilder: FormBuilder,
+    private formBuilder: FormBuilder,
     private addComicService: AddcomicService
     
   ) {
-    // this.registerForm = formBuilder.group({
-    //   title: ['Justice League', [Validators.required]],
-    //   issue: ['', [Validators.required]],
-    //   year: ['', [Validators.required]],
-    //   type: ['', [Validators.required]],
-    //   publisher: ['', [Validators.required]],
-    //   condition: ['', [Validators.required]],
-    //   key: ['', [Validators.required]],
-    //   description: ['', [Validators.required]],
-    //   short: ['', [Validators.required]],
-    //   characters: ['', [Validators.required]],
-    //   writer: ['', [Validators.required]],
-    //   artist: ['', [Validators.required]],
-    //   value: ['', [Validators.required]],
-    //   isbn: ['', [Validators.required]],
-    //   qty: ['', [Validators.required]],
-    //   image: ['', [Validators.required]]
-    // });
+    this.registerForm = formBuilder.group({
+      title: ['Justice League', [Validators.required]],
+      issue: ['44', [Validators.required]],
+      year: ['1988', [Validators.required]],
+      type: ['Trade', [Validators.required]],
+      publisher: ['Image', [Validators.required]],
+      condition: ['', [Validators.required]],
+      key: ['', [Validators.required]],
+      description: ['', [Validators.required]],
+      short: ['', [Validators.required]],
+      characters: ['', [Validators.required]],
+      writer: ['', [Validators.required]],
+      artist: ['', [Validators.required]],
+      value: ['', [Validators.required]],
+      isbn: ['', [Validators.required]],
+      qty: ['', [Validators.required]],
+      image: ['', [Validators.required]],
+      slabbed: ['', [Validators.required]]
+    });
   }
 
   onFileSelected(event: Event): void {
@@ -69,30 +70,30 @@ export class AddcomicComponent {
   }
 
 
-  // selectFile(event: any): void {
-  //   this.selectedImage = event.target.files[0];
-  //   console.log(this.selectedImage);
-  // }
+  selectFile(event: any): void {
+    this.selectedImage = event.target.files[0];
+    console.log(this.selectedImage);
+  }
 
-  // register() {
-  //   let formData = new FormData();
-  //   formData.append('image', this.selectedImage);
+  register() {
+    let formData = new FormData();
+    formData.append('image', this.selectedImage);
 
-  //   for (let key in this.registerForm.controls) {
-  //     formData.append(key, this.registerForm.get(key)?.value);
-  //    }
+    for (let key in this.registerForm.controls) {
+      formData.append(key, this.registerForm.get(key)?.value);
+     }
 
-  //   this.addComicService.registerComic(formData).subscribe({
-  //     next: (result) => {
-  //       console.log(result);
-  //       alert('Comic (Dude) has been successfully created!');
-  //     },
-  //     error: (err) => {
-  //       console.log(err.message);
-  //       alert(err.message);
-  //     },
-  //   });
-  // }
+    this.addComicService.registerComic(formData).subscribe({
+      next: (result) => {
+        console.log(result);
+        alert('Comic (Dude) has been successfully created!');
+      },
+      error: (err) => {
+        console.log(err.message);
+        alert(err.message);
+      },
+    });
+  }
 // Getter Method
 //   All the methods below return a Form Control
  

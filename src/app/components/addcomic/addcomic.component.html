@@ -7,7 +7,7 @@
 
 <!-- THIS IS THE POINT -->
   
-  <!-- <form [formGroup]="registerForm" (ngSubmit)="register()" class="container col-lg-12">
+  <form [formGroup]="registerForm" (ngSubmit)="register()" class="container col-lg-12">
     <div class="row">
       <div class="mb-3 col-lg-6">
         <label class="form-label">Title:</label>
@@ -119,11 +119,11 @@
   
     <button type="submit" class="btn mb-5">Post It!</button>
    
-  </form> -->
+  </form>
 
   <!-- I'm hoping this works -->
 
-  <form (ngSubmit)="onSubmit()" #form="ngForm">
+  <!-- <form (ngSubmit)="onSubmit()" #form="ngForm">
     <div>
       <label for="name">Title</label>
       <input type="text" id="title" name="title" [(ngModel)]="formData.title" required>
@@ -137,6 +137,6 @@
       <input type="file" id="image" name="image" (change)="onFileSelected($event)" required>
     </div>
     <button type="submit">Submit</button>
-  </form>
+  </form> -->
   
   

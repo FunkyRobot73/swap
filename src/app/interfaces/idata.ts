@@ -2,22 +2,22 @@ export interface Idata {
     id:number,
     title: string,
     issue: string,
-    type: string,
     year: string,
+    type: string,
     publisher: string,
     condition: string,
     key: string,
     description: string,
+    short: string,
     characters: string,
     writer: string,
     artist: string,
-    image: string,
     value: number,
+    isbn: string,
+    qty: number,
+    image: string,
     slabbed: string,  
     // createdAt: string,
-    short: string,
-    isbn: string,
-    qty: number
 
     
 }
