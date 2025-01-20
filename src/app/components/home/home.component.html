@@ -28,7 +28,7 @@
             
                 <div class="course-description">
             
-                    <p class="short">{{item.short}}</p>
+                    <p class="short">{{(item.short | slice:0:64) + "..."}}</p>
             
                 </div>
                 <p class="money">${{item.value}}.00</p>
