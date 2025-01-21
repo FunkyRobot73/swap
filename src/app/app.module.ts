@@ -46,6 +46,7 @@ import { MarvelPanelComponent } from './panel/marvel-panel/marvel-panel.componen
 import { SearchDisplayComponent } from './components/search-display/search-display.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomecomComponent } from './components/homecom/homecom.component';
+import { CompanyComponent } from './components/company/company.component';
 
 
 
@@ -91,6 +92,7 @@ import { HomecomComponent } from './components/homecom/homecom.component';
     SearchDisplayComponent,
     AboutComponent,
     HomecomComponent,
+    CompanyComponent,
   ],
   imports: [
     BrowserModule,

@@ -27,18 +27,18 @@ export class AddcomicComponent {
       year: ['1988', [Validators.required]],
       type: ['Trade', [Validators.required]],
       publisher: ['Image', [Validators.required]],
-      condition: ['', [Validators.required]],
-      key: ['', [Validators.required]],
-      description: ['', [Validators.required]],
-      short: ['', [Validators.required]],
-      characters: ['', [Validators.required]],
-      writer: ['', [Validators.required]],
-      artist: ['', [Validators.required]],
-      value: ['', [Validators.required]],
-      isbn: ['', [Validators.required]],
-      qty: ['', [Validators.required]],
-      image: ['', [Validators.required]],
-      slabbed: ['', [Validators.required]]
+      condition: ['5', [Validators.required]],
+      key: ['yes', [Validators.required]],
+      description: ['Amazing Issue', [Validators.required]],
+      short: ['1st Appearance of Alligators', [Validators.required]],
+      characters: ['Batman', [Validators.required]],
+      writer: ['Adele Sousa', [Validators.required]],
+      artist: ['Carlos Sousa', [Validators.required]],
+      value: ['98', [Validators.required]],
+      isbn: ['999-999-2868', [Validators.required]],
+      qty: ['1', [Validators.required]],
+      image: ['dc.webp', [Validators.required]],
+      slabbed: ['yes', [Validators.required]]
     });
   }
 

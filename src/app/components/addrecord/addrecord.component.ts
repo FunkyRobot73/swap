@@ -9,17 +9,23 @@ import { AddrecordService } from 'src/app/services/addrecord.service';
 })
 export class AddrecordComponent {
   registerForm: FormGroup;
+  formData: any = {
+    artist: "Adele",
+    title: "Thriller",
+    year: "1999",
+    type: "LP"
+  }
   
   constructor(
     private formBuilder: FormBuilder,
     private addrecordService: AddrecordService
   ) {
     this.registerForm = formBuilder.group({
-      id: ['', [Validators.required]],
-      artist: ['', [Validators.required]],
-      title: ['', [Validators.required]],
-      year: ['', [Validators.required]],
-      type: ['', [Validators.required]]
+      // id: ['', [Validators.required]],
+      artist: ['Adele', [Validators.required]],
+      title: ['Thriller', [Validators.required]],
+      year: ['1999', [Validators.required]],
+      type: ['LP', [Validators.required]]
       // genre: ['', [Validators.required]],      
       // image: ['', [Validators.required]],
       // code: ['', [Validators.required]],
@@ -29,12 +35,12 @@ export class AddrecordComponent {
   }
 
   
-  registerRecord() {
+  register() {
     let formData = new FormData();
     
 
-    for (let keyy in this.registerForm.controls) {
-      formData.append(keyy, this.registerForm.get(keyy)?.value);
+    for (let key in this.registerForm.controls) {
+      formData.append(key, this.registerForm.get(key)?.value);
     }
 
     this.addrecordService.registerRecord(formData).subscribe({
@@ -44,7 +50,7 @@ export class AddrecordComponent {
       },
       error: (err) => {
         console.log(err.message);
-        alert(err.message);
+        alert(`Oh NO ${err.message}`);
       },
     });
   }
@@ -52,20 +58,20 @@ export class AddrecordComponent {
   // Getter Method
   //   All the methods below return a Form Control
  
-get artistFormControl(){
-  return this.registerForm.get('artist')!;
-}
+// get artistFormControl(){
+//   return this.registerForm.get('artist')!;
+// }
 
-get titleFormControl(){
-  return this.registerForm.get('title')!;
-}
+// get titleFormControl(){
+//   return this.registerForm.get('title')!;
+// }
 
-get yearFormControl(){
-  return this.registerForm.get('year')!;
-}
+// get yearFormControl(){
+//   return this.registerForm.get('year')!;
+// }
 
-get typeFormControl(){
-  return this.registerForm.get('type')!;
-}
+// get typeFormControl(){
+//   return this.registerForm.get('type')!;
+// }
 
 };

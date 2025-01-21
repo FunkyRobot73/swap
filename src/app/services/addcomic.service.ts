@@ -7,9 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AddcomicService {
-  url = "http://back.swap2go.ca/addcomics"
-
-  url2 = 'https://back.swap2go.ca'
+  url = "http://back.swap2go.ca/addcomics";
+  url2 = 'https://back.swap2go.ca';
 
   constructor(private httpClient: HttpClient) { }
 

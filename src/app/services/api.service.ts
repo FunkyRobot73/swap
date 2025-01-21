@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  private apiUrl = "http://back.swap2go.ca/company"
+  private apiUrl = "https://back.swap2go.ca/company"
 
   constructor(private http: HttpClient) { }
 

@@ -2,20 +2,23 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Irecord } from '../interfaces/irecord';
+import { AddrecordComponent } from '../components/addrecord/addrecord.component';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AddrecordService {
+  url = "https://back.swap2go.ca/addrecord";
+ 
 
-  constructor(private httpClient2: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
-  registerRecord(formData2: any){
-    return this.httpClient2.post<Irecord>('https://back.swap2go.ca/addrecord', formData2)
+  registerRecord(formData: any): Observable<any>{
+    return this.httpClient.post(this.url, formData)
   }
 
-  getRecordData2(): Observable<any> {
-    return this.httpClient2.get<any>("https://back.swap2go.ca/records")
-  }
+  create(data:any): Observable<any> {
+      return this.httpClient.post<Irecord>(this.url, data);
+    }
 
 }
