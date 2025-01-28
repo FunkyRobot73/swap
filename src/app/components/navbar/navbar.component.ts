@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { ComicService } from 'src/app/services/comic.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +9,9 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  
+
 comics: string = "Comic Books"
+
 
 }

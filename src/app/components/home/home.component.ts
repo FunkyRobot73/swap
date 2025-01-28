@@ -1,5 +1,6 @@
+
 import { Component, OnInit } from '@angular/core';
-import { Idata } from 'src/app/interfaces/idata';
+
 import { ComicService } from 'src/app/services/comic.service';
 
 @Component({
@@ -11,7 +12,11 @@ export class HomeComponent implements OnInit {
   data: any;
   comicbook: any; // Displayed and sorted data
   searchTerm: string = '';
+  
+
+
   constructor(private ComicService: ComicService) {}
+  
 
   ngOnInit(): void {
   
@@ -21,6 +26,8 @@ export class HomeComponent implements OnInit {
     })
   
   }
+
+  
 
   sortData() {
     this.comicbook = this.data.filter((item:any) => {
